@@ -230,3 +230,89 @@ ul li a{
 .download-btn .common-btn-1 i{
     color: white;
 }
+
+/* my amazing section */
+
+.amazing-parent{
+    text-align: center;
+    
+}
+
+.gallery{
+    margin-top: 30px;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    grid-template-areas: 
+    "one two three"
+    "four two six"
+    "four five six";
+}
+
+.gallery img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+}
+
+.box1{
+    grid-area: one;
+}
+.box2{
+    grid-area: two;
+}
+.box3{
+    grid-area: three;
+}
+.box4{
+    grid-area: four;
+}
+.box5{
+    grid-area: five;
+}
+.box6{
+    grid-area: six;
+}
+
+/* footer area */
+
+footer{
+    text-align: center;
+    margin-top: 80px !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 80px !important;
+    background-color: #FFF8F3;
+    padding: 20px;
+}
+
+footer form{
+    padding: 20px;
+}
+
+.footer-left{
+    text-align: start;
+}
+.footer-left p{
+    margin: 10px 0;
+}
+
+footer form input, footer form textarea {
+    border: none;
+    outline: none;
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.footer-icon-parent span {
+    color: #fd6e0a;
+    font-size: 18px;
+    padding: 3px;
+
+}
